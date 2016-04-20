@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Rocky Bonasorte
+Date: 4/20/2016
 Filename:   Movie.html
 - ->
 <head>
@@ -52,6 +52,46 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Length:</h3>
+            <p class="list-group-item-text lead text-primary" id="Length">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Number in the Series:</h3>
+            <p class="list-group-item-text lead text-primary" id="Series">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Quotes:</h3>
+            <p class="list-group-item-text lead text-primary" id="Quotes">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Credits:</h3>
+            <p class="list-group-item-text lead text-primary" id="Credits">  </p>
+        </a> 
 
     </div>
 </div> 
@@ -70,6 +110,15 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Year').html(json.Year);
+                     $('#Length').html(json.Length);
+                     $('#Series').html(json.Series);
+                     $('#Director').html(json.Director);
+                     $('#Awards').html(json.Awards);
+                     $('#Genre').html(json.Genre);
+                     $('#Quotes').html(json.Quotes);
+                     $('#Credits').html(json.Credits);
+                     
                 })
                 .fail(function() {
                       alert("Posting failed.");              
